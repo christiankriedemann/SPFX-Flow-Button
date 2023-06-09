@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="RechnungVorbereiten"
+        Location="ClientSideExtension.ListViewCommandSet.CommandBar"
+        ListTemplateId="100"
+        Properties="{&quot;ListID&quot;: &quot;&quot;,&quot;DialogText&quot;: &quot;&quot;,&quot;FlowURL&quot;: &quot;&quot;}"
+        ComponentId="fe01249d-706c-4491-bbe7-a1bfb34abab0" />
+</Elements>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="RechnungVorbereiten"
+        RegistrationId="100"
+        RegistrationType="List"
+        Location="ClientSideExtension.ListViewCommandSet.CommandBar"
+        ClientSideComponentId="fe01249d-706c-4491-bbe7-a1bfb34abab0"
+        ClientSideComponentProperties="{&quot;ListID&quot;: &quot;&quot;,&quot;DialogText&quot;: &quot;&quot;,&quot;FlowURL&quot;: &quot;&quot;}">
+    </CustomAction>
+</Elements>

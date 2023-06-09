@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.20.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.17.1",
+    "libraryName": "rechnung-vorbereiten",
+    "libraryId": "60007b71-35f4-4354-a018-f4db8f94bf21",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Rechnung vorbereiten",
+    "solutionShortDescription": "Rechnung vorbereiten description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ListViewCommandSet"
+  }
+}

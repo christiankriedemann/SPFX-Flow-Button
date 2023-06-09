@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "rechnung-vorbereiten-client-side-solution",
+    "id": "60007b71-35f4-4354-a018-f4db8f94bf21",
+    "version": "4.0.2.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Christian Kriedemann",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Übergibt die ID von ausgewählten Datensätzen an einen Flow."
+      },
+      "longDescription": {
+        "default": "Übergibt die ID von einer oder mehreren ausgewählten Positionen an den Flow zur Vorbereitung von Rechnungen."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Sharepoint List Erweiterung 'Rechnung vorbereiten'",
+        "description": "Übergibt ausgewählte Listen-Elemente an einen Flow und startet diesen.",
+        "id": "28757cbe-2807-4c75-9323-ad351a14f3be",
+        "version": "3.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/rechnung-vorbereiten.sppkg"
+  }
+}

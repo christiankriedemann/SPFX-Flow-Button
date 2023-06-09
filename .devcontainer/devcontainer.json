@@ -1,0 +1,13 @@
+{
+  "name": "SPFx Dev Container",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [5432, 4321, 35729],
+  "runArgs": ["--network=host"],
+  "appPort": [4321],
+  "extensions": [],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/usr/src/app,type=bind",
+  "workspaceFolder": "/usr/src/app"
+}

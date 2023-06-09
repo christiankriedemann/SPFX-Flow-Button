@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "rechnung-vorbereiten-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/rechnungVorbereiten/RechnungVorbereitenCommandSet.js",
+          "manifest": "./src/extensions/rechnungVorbereiten/RechnungVorbereitenCommandSet.manifest.json",
+          "iconPath": "./src/app/src/extensions/rechnungVorbereiten/assets/ic_fluent_clipboard_task_add_20_regular.svg"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "RechnungVorbereitenCommandSetStrings": "lib/extensions/rechnungVorbereiten/loc/{locale}.js"
+  }
+}

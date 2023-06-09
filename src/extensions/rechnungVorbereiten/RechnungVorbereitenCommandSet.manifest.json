@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/command-set-extension-manifest.schema.json",
+
+  "id": "fe01249d-706c-4491-bbe7-a1bfb34abab0",
+  "alias": "RechnungVorbereitenCommandSet",
+  "componentType": "Extension",
+  "extensionType": "ListViewCommandSet",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+
+  "items": {
+    "RECHNUNG_VORBEREITEN": {
+      "title": { "default": "Rechnung vorbereiten" },
+      "iconImageUrl": "./assets/ic_fluent_clipboard_task_add_20_regular.svg",
+      "type": "command"
+    }
+  }
+
+}

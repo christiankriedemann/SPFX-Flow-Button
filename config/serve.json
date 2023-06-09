@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://mtegmbh.sharepoint.com/sites/MTE/Lists/V5%20Tren/Alle%20InfoFelder.aspx",
+      "customActions": {
+        "fe01249d-706c-4491-bbe7-a1bfb34abab0": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "ListID": "",
+            "DialogText": "",
+            "FlowURL": ""
+          }
+        }
+      }
+    },
+    "rechnungVorbereiten": {
+      "pageUrl": "https://mtegmbh.sharepoint.com/sites/MTE/Lists/V5%20Tren/Alle%20InfoFelder.aspx",
+      "customActions": {
+        "fe01249d-706c-4491-bbe7-a1bfb34abab0": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "ListID": "",
+            "DialogText": "",
+            "FlowURL": ""
+          }
+        }
+      }
+    }
+  }
+}
