@@ -1,10 +1,43 @@
-# rechnung-vorbereiten
+# SPFX-Flow-Button
 
-Paket für die Auslieferung erstellen
+In diesem Projekt befinden sich folgende SharePoint Elemente:
+
+- SharePoint List Erweiterung "RechnungVorbereiten"
+
+## Entwicklungsumgebung
+
+- Docker Desktop
+- Visual Studio Code
+- VSCode Erweiterungen
+  - Docker
+  - Dev Containers
+
+Docker Desktop muss gestartet sein, damit VSCode den Container erstellen und starten kann.
+Damit ist es möglich innerhalb des Docker Containers zu entwickeln, ohne mit lokalen Einstellungen in Konflikt zu geraten.
+
+## RechnungVorbereiten
+
+Die Erweiterung erzeugt eine Schaltfläche in einer SharePoint List, sobald Zeilen ausgewählt sind. Dies bietet die Möglichkeit mehrere Datensätze gleichzeitig an einen Flow zu senden.
+
+Die Aufgabe ist, in diesem Fall, die ID's der ausgewählten Zeilen einer speziellen Liste an einen Flow zu senden. In diesem Fall sollen mehrere Positionen einer neuen Rechnungsnummer zugeordnet werden. Danach wird ein Dialog angezeigt, damit der Benutzer weiss, dass sein Klick auf die Schaltfläche ausgeführt wurde.
+
+Die ID's der Zeilen werden als Liste (Array) an die URL eines Flows übergeben, der dann alle weiteren Funktionen übernimmt.
+
+Es wird eine SharePoint Liste für drei Properties benötigt, damit diese Eigenschften unabhängig von dieser Erweiterung und ohne Programmierkenntnisse bearbeitet werden können.
+
+Die Liste hat den Namen "SPFX_RechnungVorbereiten_Konfiguration" und verfügt über die Spalten "key" und "value". Darin sind die Werte für "FlowURL", "ListID" und "DialogText" gespeichert.
+
+So ist es möglich die Schaltfläche nur ein einer bestimmten Liste azuzeigen, auch wenn die Erweiterung in allen Listen verfügbar ist.
+
+## Paket erstellen
+
+Paket für die Auslieferung erstellen:
 
 ```bash
 node updateVersion.js && gulp clean && gulp bundle --ship && gulp package-solution --ship
 ```
+
+## Erweiterung lokal testen
 
 Test Server starten, um die erweiterung im SharePoint zu testen
 
@@ -12,15 +45,7 @@ Test Server starten, um die erweiterung im SharePoint zu testen
 gulp serve
 ```
 
-## Summary
-
-Die Erweiterung zeigt einen Button in einer speziellen SharePoint List an, sobald ein oder mehrere Datensätze ausgewählt sind.
-
-Mit einem Klick auf den Button werden die IDs der Datensätze an einen Flow gesendet.
-
-Die ID der speziellen Liste und die URL des Flows, wird eine SahrePoint List benötigt. So ist es möglich diURL und ID anzupassen, ohne die Erweiterung aktualisieren zu müssen.
-
-## Used SharePoint Framework Version
+## Verwendete SharePoint Framework Version
 
 ![version](https://img.shields.io/badge/version-1.17.1-green.svg)
 
@@ -31,52 +56,11 @@ Die ID der speziellen Liste und die URL des Flows, wird eine SahrePoint List ben
 
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
-## Prerequisites
-
-> Any special pre-requisites?
-
-## Solution
-
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
-
-## Version history
-
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
-
 ## Disclaimer
 
 **THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
 ---
-
-## Minimal Path to Awesome
-
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
-
-> Include any additional steps as needed.
-
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
 
 ## References
 
